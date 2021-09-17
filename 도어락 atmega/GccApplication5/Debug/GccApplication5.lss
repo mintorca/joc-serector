@@ -1,0 +1,1098 @@
+
+GccApplication5.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000034  00800100  0000062a  0000069e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000062a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000006d2  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000704  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000060  00000000  00000000  00000740  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00001568  00000000  00000000  000007a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000093d  00000000  00000000  00001d08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000007ce  00000000  00000000  00002645  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000c0  00000000  00000000  00002e14  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000490  00000000  00000000  00002ed4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000b61  00000000  00000000  00003364  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000050  00000000  00000000  00003ec5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea e2       	ldi	r30, 0x2A	; 42
+  a0:	f6 e0       	ldi	r31, 0x06	; 6
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 33       	cpi	r26, 0x34	; 52
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	cd d0       	rcall	.+410    	; 0x24e <main>
+  b4:	b8 c2       	rjmp	.+1392   	; 0x626 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <LCD_rCommand>:
+
+// 텍스트 LCD의 비지 플래그 상태를 확인하는 함수
+char LCD_BusyCheck(unsigned char temp){
+	if(temp & 0x80)          return 1;
+	else            return 0;
+}
+  b8:	1a ba       	out	0x1a, r1	; 26
+  ba:	a8 98       	cbi	0x15, 0	; 21
+  bc:	a9 9a       	sbi	0x15, 1	; 21
+  be:	aa 9a       	sbi	0x15, 2	; 21
+  c0:	85 e0       	ldi	r24, 0x05	; 5
+  c2:	8a 95       	dec	r24
+  c4:	f1 f7       	brne	.-4      	; 0xc2 <LCD_rCommand+0xa>
+  c6:	00 00       	nop
+  c8:	89 b3       	in	r24, 0x19	; 25
+  ca:	95 e0       	ldi	r25, 0x05	; 5
+  cc:	9a 95       	dec	r25
+  ce:	f1 f7       	brne	.-4      	; 0xcc <LCD_rCommand+0x14>
+  d0:	00 00       	nop
+  d2:	aa 98       	cbi	0x15, 2	; 21
+  d4:	9f ef       	ldi	r25, 0xFF	; 255
+  d6:	9a bb       	out	0x1a, r25	; 26
+  d8:	95 e0       	ldi	r25, 0x05	; 5
+  da:	9a 95       	dec	r25
+  dc:	f1 f7       	brne	.-4      	; 0xda <LCD_rCommand+0x22>
+  de:	00 00       	nop
+  e0:	08 95       	ret
+
+000000e2 <LCD_wCommand>:
+
+// 텍스트 LCD에 명령을 출력하는 함수 - 단, 비지플래그 체크하지 않음
+void LCD_wCommand(char cmd){
+	cbi(LCD_CON, LCD_RS); // 0번 비트 클리어, RS = 0, 명령
+  e2:	a8 98       	cbi	0x15, 0	; 21
+	cbi(LCD_CON, LCD_RW); // 1번 비트 클리어, RW = 0, 쓰기
+  e4:	a9 98       	cbi	0x15, 1	; 21
+	sbi(LCD_CON, LCD_E);  // 2번 비트 설정, E = 1
+  e6:	aa 9a       	sbi	0x15, 2	; 21
+	
+	LCD_DATA = cmd;          // 명령 출력
+  e8:	8b bb       	out	0x1b, r24	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ea:	85 e0       	ldi	r24, 0x05	; 5
+  ec:	8a 95       	dec	r24
+  ee:	f1 f7       	brne	.-4      	; 0xec <LCD_wCommand+0xa>
+  f0:	00 00       	nop
+	_delay_us(1);
+	cbi(LCD_CON, LCD_E);  // 명령 쓰기 동작 끝
+  f2:	aa 98       	cbi	0x15, 2	; 21
+  f4:	85 e0       	ldi	r24, 0x05	; 5
+  f6:	8a 95       	dec	r24
+  f8:	f1 f7       	brne	.-4      	; 0xf6 <LCD_wCommand+0x14>
+  fa:	00 00       	nop
+  fc:	08 95       	ret
+
+000000fe <LCD_wBCommand>:
+	
+	_delay_us(1);
+}
+
+// 텍스트 LCD에 명령을 출력하는 함수 - 단, 비지플래그 체크함
+void LCD_wBCommand(char cmd){
+  fe:	cf 93       	push	r28
+ 100:	c8 2f       	mov	r28, r24
+	while(LCD_BusyCheck(LCD_rCommand()))
+ 102:	04 c0       	rjmp	.+8      	; 0x10c <LCD_wBCommand+0xe>
+ 104:	85 e0       	ldi	r24, 0x05	; 5
+ 106:	8a 95       	dec	r24
+ 108:	f1 f7       	brne	.-4      	; 0x106 <LCD_wBCommand+0x8>
+ 10a:	00 00       	nop
+ 10c:	d5 df       	rcall	.-86     	; 0xb8 <LCD_rCommand>
+ 10e:	88 23       	and	r24, r24
+ 110:	cc f3       	brlt	.-14     	; 0x104 <LCD_wBCommand+0x6>
+	_delay_us(1);
+	cbi(LCD_CON, LCD_RS); // 0번 비트 클리어, RS = 0, 명령
+ 112:	a8 98       	cbi	0x15, 0	; 21
+	cbi(LCD_CON, LCD_RW); // 1번 비트 클리어, RW = 0, 쓰기
+ 114:	a9 98       	cbi	0x15, 1	; 21
+	sbi(LCD_CON, LCD_E);  // 2번 비트 설정, E = 1
+ 116:	aa 9a       	sbi	0x15, 2	; 21
+	
+	LCD_DATA = cmd;          // 명령 출력
+ 118:	cb bb       	out	0x1b, r28	; 27
+ 11a:	85 e0       	ldi	r24, 0x05	; 5
+ 11c:	8a 95       	dec	r24
+ 11e:	f1 f7       	brne	.-4      	; 0x11c <LCD_wBCommand+0x1e>
+ 120:	00 00       	nop
+	_delay_us(1);
+	cbi(LCD_CON, LCD_E);  // 명령 쓰기 동작 끝
+ 122:	aa 98       	cbi	0x15, 2	; 21
+ 124:	85 e0       	ldi	r24, 0x05	; 5
+ 126:	8a 95       	dec	r24
+ 128:	f1 f7       	brne	.-4      	; 0x126 <LCD_wBCommand+0x28>
+ 12a:	00 00       	nop
+	
+	_delay_us(1);
+}
+ 12c:	cf 91       	pop	r28
+ 12e:	08 95       	ret
+
+00000130 <LCD_Init>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 130:	2f ef       	ldi	r18, 0xFF	; 255
+ 132:	81 ee       	ldi	r24, 0xE1	; 225
+ 134:	94 e0       	ldi	r25, 0x04	; 4
+ 136:	21 50       	subi	r18, 0x01	; 1
+ 138:	80 40       	sbci	r24, 0x00	; 0
+ 13a:	90 40       	sbci	r25, 0x00	; 0
+ 13c:	e1 f7       	brne	.-8      	; 0x136 <LCD_Init+0x6>
+ 13e:	00 c0       	rjmp	.+0      	; 0x140 <LCD_Init+0x10>
+ 140:	00 00       	nop
+
+// 텍스트 LCD를 초기화하는 함수
+void LCD_Init(void){
+	_delay_ms(100);
+	// 비지 플래그를 체크하지 않는 Function Set
+	LCD_wCommand(0x38);
+ 142:	88 e3       	ldi	r24, 0x38	; 56
+ 144:	ce df       	rcall	.-100    	; 0xe2 <LCD_wCommand>
+ 146:	8f e3       	ldi	r24, 0x3F	; 63
+ 148:	9c e9       	ldi	r25, 0x9C	; 156
+ 14a:	01 97       	sbiw	r24, 0x01	; 1
+ 14c:	f1 f7       	brne	.-4      	; 0x14a <LCD_Init+0x1a>
+ 14e:	00 c0       	rjmp	.+0      	; 0x150 <LCD_Init+0x20>
+ 150:	00 00       	nop
+	_delay_ms(10);
+	// 비지 플래그를 체크하지 않는 Function Set
+	LCD_wCommand(0x38);
+ 152:	88 e3       	ldi	r24, 0x38	; 56
+ 154:	c6 df       	rcall	.-116    	; 0xe2 <LCD_wCommand>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 156:	8f e1       	ldi	r24, 0x1F	; 31
+ 158:	93 e0       	ldi	r25, 0x03	; 3
+ 15a:	01 97       	sbiw	r24, 0x01	; 1
+ 15c:	f1 f7       	brne	.-4      	; 0x15a <LCD_Init+0x2a>
+ 15e:	00 c0       	rjmp	.+0      	; 0x160 <LCD_Init+0x30>
+	_delay_us(200);
+	// 비지 플래그를 체크하지 않는 Function Set
+	LCD_wCommand(0x38);
+ 160:	00 00       	nop
+ 162:	88 e3       	ldi	r24, 0x38	; 56
+ 164:	be df       	rcall	.-132    	; 0xe2 <LCD_wCommand>
+ 166:	8f e1       	ldi	r24, 0x1F	; 31
+ 168:	93 e0       	ldi	r25, 0x03	; 3
+ 16a:	01 97       	sbiw	r24, 0x01	; 1
+ 16c:	f1 f7       	brne	.-4      	; 0x16a <LCD_Init+0x3a>
+ 16e:	00 c0       	rjmp	.+0      	; 0x170 <LCD_Init+0x40>
+	_delay_us(200);
+	
+	// 비지 플래그를 체크하는 Function Set
+	LCD_wBCommand(0x38);
+ 170:	00 00       	nop
+ 172:	88 e3       	ldi	r24, 0x38	; 56
+	// 비지 플래그를 체크하는 Display On/Off Control
+	LCD_wBCommand(0x0c);
+ 174:	c4 df       	rcall	.-120    	; 0xfe <LCD_wBCommand>
+ 176:	8c e0       	ldi	r24, 0x0C	; 12
+ 178:	c2 df       	rcall	.-124    	; 0xfe <LCD_wBCommand>
+	// 비지 플래그를 체크하는 Clear Display
+	LCD_wBCommand(0x01);
+ 17a:	81 e0       	ldi	r24, 0x01	; 1
+ 17c:	c0 cf       	rjmp	.-128    	; 0xfe <LCD_wBCommand>
+ 17e:	08 95       	ret
+
+00000180 <LCD_wData>:
+ 180:	cf 93       	push	r28
+}
+
+// 텍스트 LCD에 1바이트 데이터를 출력하는 함수
+void LCD_wData(char dat){
+ 182:	c8 2f       	mov	r28, r24
+	while(LCD_BusyCheck(LCD_rCommand()))
+ 184:	04 c0       	rjmp	.+8      	; 0x18e <LCD_wData+0xe>
+ 186:	85 e0       	ldi	r24, 0x05	; 5
+ 188:	8a 95       	dec	r24
+ 18a:	f1 f7       	brne	.-4      	; 0x188 <LCD_wData+0x8>
+ 18c:	00 00       	nop
+ 18e:	94 df       	rcall	.-216    	; 0xb8 <LCD_rCommand>
+ 190:	88 23       	and	r24, r24
+ 192:	cc f3       	brlt	.-14     	; 0x186 <LCD_wData+0x6>
+	_delay_us(1);
+	
+	sbi(LCD_CON, LCD_RS); // 0번 비트 설정, RS = 1, 데이터
+ 194:	a8 9a       	sbi	0x15, 0	; 21
+	cbi(LCD_CON, LCD_RW); // 1번 비트 클리어, RW = 0, 쓰기
+ 196:	a9 98       	cbi	0x15, 1	; 21
+	sbi(LCD_CON, LCD_E); // 2번 비트 설정, E = 1
+ 198:	aa 9a       	sbi	0x15, 2	; 21
+	
+	LCD_DATA = dat;       // 데이터 출력
+ 19a:	cb bb       	out	0x1b, r28	; 27
+ 19c:	85 e0       	ldi	r24, 0x05	; 5
+ 19e:	8a 95       	dec	r24
+ 1a0:	f1 f7       	brne	.-4      	; 0x19e <LCD_wData+0x1e>
+ 1a2:	00 00       	nop
+	_delay_us(1);
+	cbi(LCD_CON, LCD_E);  // 데이터 쓰기 동작 끝
+ 1a4:	aa 98       	cbi	0x15, 2	; 21
+ 1a6:	85 e0       	ldi	r24, 0x05	; 5
+ 1a8:	8a 95       	dec	r24
+ 1aa:	f1 f7       	brne	.-4      	; 0x1a8 <LCD_wData+0x28>
+ 1ac:	00 00       	nop
+	
+	_delay_us(1);
+}
+ 1ae:	cf 91       	pop	r28
+ 1b0:	08 95       	ret
+
+000001b2 <LCD_wString>:
+
+
+
+// 텍스트 LCD에 문자열을 출력하는 함수
+void LCD_wString(char *str){
+ 1b2:	cf 93       	push	r28
+ 1b4:	df 93       	push	r29
+ 1b6:	ec 01       	movw	r28, r24
+	while(*str)
+ 1b8:	88 81       	ld	r24, Y
+ 1ba:	88 23       	and	r24, r24
+ 1bc:	29 f0       	breq	.+10     	; 0x1c8 <LCD_wString+0x16>
+ 1be:	21 96       	adiw	r28, 0x01	; 1
+	LCD_wData(*str++);
+ 1c0:	df df       	rcall	.-66     	; 0x180 <LCD_wData>
+
+
+
+// 텍스트 LCD에 문자열을 출력하는 함수
+void LCD_wString(char *str){
+	while(*str)
+ 1c2:	89 91       	ld	r24, Y+
+ 1c4:	81 11       	cpse	r24, r1
+ 1c6:	fc cf       	rjmp	.-8      	; 0x1c0 <LCD_wString+0xe>
+	LCD_wData(*str++);
+}
+ 1c8:	df 91       	pop	r29
+ 1ca:	cf 91       	pop	r28
+ 1cc:	08 95       	ret
+
+000001ce <KeyScan>:
+	}
+}
+char KeyScan(void){
+	char KeyBuf=0xFF;  // 키 값이 들어갈 버퍼, 초기값 0xFF
+
+	PORTE=0xFF;         // 포트 초기값, 입력핀 내부풀업저항 사용
+ 1ce:	8f ef       	ldi	r24, 0xFF	; 255
+ 1d0:	83 b9       	out	0x03, r24	; 3
+	DDRE=0x0F;         // 비트0,1,2,3 출력으로 지정
+ 1d2:	8f e0       	ldi	r24, 0x0F	; 15
+ 1d4:	82 b9       	out	0x02, r24	; 2
+
+	PORTE&=~1; _delay_us(5); // 1번째 줄 선택
+ 1d6:	18 98       	cbi	0x03, 0	; 3
+ 1d8:	8a e1       	ldi	r24, 0x1A	; 26
+ 1da:	8a 95       	dec	r24
+ 1dc:	f1 f7       	brne	.-4      	; 0x1da <KeyScan+0xc>
+ 1de:	00 c0       	rjmp	.+0      	; 0x1e0 <KeyScan+0x12>
+	if((PINE&0x10)==0)KeyBuf='1';
+ 1e0:	0c 99       	sbic	0x01, 4	; 1
+ 1e2:	02 c0       	rjmp	.+4      	; 0x1e8 <KeyScan+0x1a>
+ 1e4:	81 e3       	ldi	r24, 0x31	; 49
+ 1e6:	01 c0       	rjmp	.+2      	; 0x1ea <KeyScan+0x1c>
+			i = 64;
+		}
+	}
+}
+char KeyScan(void){
+	char KeyBuf=0xFF;  // 키 값이 들어갈 버퍼, 초기값 0xFF
+ 1e8:	8f ef       	ldi	r24, 0xFF	; 255
+	PORTE=0xFF;         // 포트 초기값, 입력핀 내부풀업저항 사용
+	DDRE=0x0F;         // 비트0,1,2,3 출력으로 지정
+
+	PORTE&=~1; _delay_us(5); // 1번째 줄 선택
+	if((PINE&0x10)==0)KeyBuf='1';
+	if((PINE&0x20)==0)KeyBuf='2';
+ 1ea:	0d 9b       	sbis	0x01, 5	; 1
+ 1ec:	82 e3       	ldi	r24, 0x32	; 50
+	if((PINE&0x40)==0)KeyBuf='3';
+ 1ee:	0e 9b       	sbis	0x01, 6	; 1
+ 1f0:	83 e3       	ldi	r24, 0x33	; 51
+	if((PINE&0x80)==0)KeyBuf='A';
+ 1f2:	0f 9b       	sbis	0x01, 7	; 1
+ 1f4:	81 e4       	ldi	r24, 0x41	; 65
+	PORTE|=1; // 1번째 줄 해제
+ 1f6:	18 9a       	sbi	0x03, 0	; 3
+
+	PORTE&=~2; _delay_us(5); // 2번째 줄 선택
+ 1f8:	19 98       	cbi	0x03, 1	; 3
+ 1fa:	9a e1       	ldi	r25, 0x1A	; 26
+ 1fc:	9a 95       	dec	r25
+ 1fe:	f1 f7       	brne	.-4      	; 0x1fc <KeyScan+0x2e>
+ 200:	00 c0       	rjmp	.+0      	; 0x202 <KeyScan+0x34>
+	if((PINE&0x10)==0)KeyBuf='4';
+ 202:	0c 9b       	sbis	0x01, 4	; 1
+ 204:	84 e3       	ldi	r24, 0x34	; 52
+	if((PINE&0x20)==0)KeyBuf='5';
+ 206:	0d 9b       	sbis	0x01, 5	; 1
+ 208:	85 e3       	ldi	r24, 0x35	; 53
+	if((PINE&0x40)==0)KeyBuf='6';
+ 20a:	0e 9b       	sbis	0x01, 6	; 1
+ 20c:	86 e3       	ldi	r24, 0x36	; 54
+	if((PINE&0x80)==0)KeyBuf='B';
+ 20e:	0f 9b       	sbis	0x01, 7	; 1
+ 210:	82 e4       	ldi	r24, 0x42	; 66
+	PORTE|=2; // 2번째 줄 해제
+ 212:	19 9a       	sbi	0x03, 1	; 3
+
+	PORTE&=~4; _delay_us(5); // 3번째 줄 선택
+ 214:	1a 98       	cbi	0x03, 2	; 3
+ 216:	9a e1       	ldi	r25, 0x1A	; 26
+ 218:	9a 95       	dec	r25
+ 21a:	f1 f7       	brne	.-4      	; 0x218 <KeyScan+0x4a>
+ 21c:	00 c0       	rjmp	.+0      	; 0x21e <KeyScan+0x50>
+	if((PINE&0x10)==0)KeyBuf='7';
+ 21e:	0c 9b       	sbis	0x01, 4	; 1
+ 220:	87 e3       	ldi	r24, 0x37	; 55
+	if((PINE&0x20)==0)KeyBuf='8';
+ 222:	0d 9b       	sbis	0x01, 5	; 1
+ 224:	88 e3       	ldi	r24, 0x38	; 56
+	if((PINE&0x40)==0)KeyBuf='9';
+ 226:	0e 9b       	sbis	0x01, 6	; 1
+ 228:	89 e3       	ldi	r24, 0x39	; 57
+	if((PINE&0x80)==0)KeyBuf='C';
+ 22a:	0f 9b       	sbis	0x01, 7	; 1
+ 22c:	83 e4       	ldi	r24, 0x43	; 67
+	PORTE|=4; // 3번째 줄 해제
+ 22e:	1a 9a       	sbi	0x03, 2	; 3
+
+	PORTE&=~8; _delay_us(5); // 4번째 줄 선택
+ 230:	1b 98       	cbi	0x03, 3	; 3
+ 232:	9a e1       	ldi	r25, 0x1A	; 26
+ 234:	9a 95       	dec	r25
+ 236:	f1 f7       	brne	.-4      	; 0x234 <KeyScan+0x66>
+ 238:	00 c0       	rjmp	.+0      	; 0x23a <KeyScan+0x6c>
+	if((PINE&0x10)==0)KeyBuf='*';
+ 23a:	0c 9b       	sbis	0x01, 4	; 1
+ 23c:	8a e2       	ldi	r24, 0x2A	; 42
+	if((PINE&0x20)==0)KeyBuf='0';
+ 23e:	0d 9b       	sbis	0x01, 5	; 1
+ 240:	80 e3       	ldi	r24, 0x30	; 48
+	if((PINE&0x40)==0)KeyBuf='#';
+ 242:	0e 9b       	sbis	0x01, 6	; 1
+ 244:	83 e2       	ldi	r24, 0x23	; 35
+	if((PINE&0x80)==0)KeyBuf='D';
+ 246:	0f 9b       	sbis	0x01, 7	; 1
+ 248:	84 e4       	ldi	r24, 0x44	; 68
+	PORTE|=8; // 4번째 줄 해제
+ 24a:	1b 9a       	sbi	0x03, 3	; 3
+
+	
+
+	return KeyBuf; // Key 없으면 0xFF 리턴
+ 24c:	08 95       	ret
+
+0000024e <main>:
+	LCD_wData(*str++);
+}
+
+// C 언어의 주 실행 함수
+int main(void){
+	PORTC = 0xFF;
+ 24e:	8f ef       	ldi	r24, 0xFF	; 255
+ 250:	85 bb       	out	0x15, r24	; 21
+	DDRC = 0xFF;
+ 252:	84 bb       	out	0x14, r24	; 20
+	DDRA = 0B11111111;
+ 254:	8a bb       	out	0x1a, r24	; 26
+	DDRD = 0B11111111;
+ 256:	81 bb       	out	0x11, r24	; 17
+	DDRE=0x00;      // for Pull-up button,PF0
+ 258:	12 b8       	out	0x02, r1	; 2
+	PORTE=0xFF;    // Pull-up Start
+ 25a:	83 b9       	out	0x03, r24	; 3
+	
+	LCD_Init();         // 텍스트 LCD 초기화 - 함수 호출
+ 25c:	69 df       	rcall	.-302    	; 0x130 <LCD_Init>
+
+	
+	LCD_wBCommand(0x80 | 0x00);  // DDRAM Address = 0 설정
+ 25e:	80 e8       	ldi	r24, 0x80	; 128
+ 260:	4e df       	rcall	.-356    	; 0xfe <LCD_wBCommand>
+	LCD_wString("hi!");     // 텍스트 LCD 문자열 출력
+ 262:	82 e0       	ldi	r24, 0x02	; 2
+ 264:	91 e0       	ldi	r25, 0x01	; 1
+	
+	
+	LCD_wBCommand(0x80 | 0x40);  // DDRAM Address = 0x40 설정
+ 266:	a5 df       	rcall	.-182    	; 0x1b2 <LCD_wString>
+ 268:	80 ec       	ldi	r24, 0xC0	; 192
+	LCD_wString("sooin"); // WESNET 문자열 출력
+ 26a:	49 df       	rcall	.-366    	; 0xfe <LCD_wBCommand>
+ 26c:	86 e0       	ldi	r24, 0x06	; 6
+ 26e:	91 e0       	ldi	r25, 0x01	; 1
+ 270:	a0 df       	rcall	.-192    	; 0x1b2 <LCD_wString>
+			i++;
+			_delay_ms(200);
+		}
+		if (key == 'D')
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 272:	00 e0       	ldi	r16, 0x00	; 0
+		if(i==81)
+		{
+			LCD_Init();
+			LCD_wBCommand(0x80 | 0x00);  // DDRAM Address = 0 설정
+			LCD_wString("TEXT LCD");
+			i = 64;
+ 274:	11 e0       	ldi	r17, 0x01	; 1
+ 276:	68 94       	set
+ 278:	ee 24       	eor	r14, r14
+ 27a:	e6 f8       	bld	r14, 6
+	char key;
+	// 함수의 형태와 같이 정수형(int)의 값을 반환함
+	while(1)
+	{
+		
+		key = KeyScan();
+ 27c:	f1 2c       	mov	r15, r1
+ 27e:	a7 df       	rcall	.-178    	; 0x1ce <KeyScan>
+		
+		if (key == '1')
+ 280:	c8 2f       	mov	r28, r24
+ 282:	81 33       	cpi	r24, 0x31	; 49
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 284:	d1 f4       	brne	.+52     	; 0x2ba <main+0x6c>
+ 286:	f8 01       	movw	r30, r16
+ 288:	80 81       	ld	r24, Z
+ 28a:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("1");
+ 28c:	38 df       	rcall	.-400    	; 0xfe <LCD_wBCommand>
+ 28e:	8c e0       	ldi	r24, 0x0C	; 12
+ 290:	91 e0       	ldi	r25, 0x01	; 1
+ 292:	8f df       	rcall	.-226    	; 0x1b2 <LCD_wString>
+			i++;
+ 294:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 298:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 29c:	01 96       	adiw	r24, 0x01	; 1
+ 29e:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2a2:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 2a6:	ff ef       	ldi	r31, 0xFF	; 255
+ 2a8:	23 ec       	ldi	r18, 0xC3	; 195
+ 2aa:	89 e0       	ldi	r24, 0x09	; 9
+ 2ac:	f1 50       	subi	r31, 0x01	; 1
+ 2ae:	20 40       	sbci	r18, 0x00	; 0
+ 2b0:	80 40       	sbci	r24, 0x00	; 0
+ 2b2:	e1 f7       	brne	.-8      	; 0x2ac <main+0x5e>
+ 2b4:	00 c0       	rjmp	.+0      	; 0x2b6 <main+0x68>
+ 2b6:	00 00       	nop
+			_delay_ms(200);
+		}
+		if (key == '2')
+ 2b8:	38 c0       	rjmp	.+112    	; 0x32a <main+0xdc>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 2ba:	82 33       	cpi	r24, 0x32	; 50
+ 2bc:	d1 f4       	brne	.+52     	; 0x2f2 <main+0xa4>
+ 2be:	f8 01       	movw	r30, r16
+ 2c0:	80 81       	ld	r24, Z
+ 2c2:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("2");
+ 2c4:	1c df       	rcall	.-456    	; 0xfe <LCD_wBCommand>
+ 2c6:	8e e0       	ldi	r24, 0x0E	; 14
+ 2c8:	91 e0       	ldi	r25, 0x01	; 1
+ 2ca:	73 df       	rcall	.-282    	; 0x1b2 <LCD_wString>
+			i++;
+ 2cc:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2d0:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2d4:	01 96       	adiw	r24, 0x01	; 1
+ 2d6:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2da:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2de:	ff ef       	ldi	r31, 0xFF	; 255
+ 2e0:	23 ec       	ldi	r18, 0xC3	; 195
+ 2e2:	89 e0       	ldi	r24, 0x09	; 9
+ 2e4:	f1 50       	subi	r31, 0x01	; 1
+ 2e6:	20 40       	sbci	r18, 0x00	; 0
+ 2e8:	80 40       	sbci	r24, 0x00	; 0
+ 2ea:	e1 f7       	brne	.-8      	; 0x2e4 <main+0x96>
+ 2ec:	00 c0       	rjmp	.+0      	; 0x2ee <main+0xa0>
+			_delay_ms(200);
+		}
+		if (key == '3')
+ 2ee:	00 00       	nop
+ 2f0:	38 c0       	rjmp	.+112    	; 0x362 <main+0x114>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 2f2:	83 33       	cpi	r24, 0x33	; 51
+ 2f4:	d1 f4       	brne	.+52     	; 0x32a <main+0xdc>
+ 2f6:	f8 01       	movw	r30, r16
+ 2f8:	80 81       	ld	r24, Z
+ 2fa:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("3");
+ 2fc:	00 df       	rcall	.-512    	; 0xfe <LCD_wBCommand>
+ 2fe:	80 e1       	ldi	r24, 0x10	; 16
+ 300:	91 e0       	ldi	r25, 0x01	; 1
+ 302:	57 df       	rcall	.-338    	; 0x1b2 <LCD_wString>
+			i++;
+ 304:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 308:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 30c:	01 96       	adiw	r24, 0x01	; 1
+ 30e:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 312:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 316:	ff ef       	ldi	r31, 0xFF	; 255
+ 318:	23 ec       	ldi	r18, 0xC3	; 195
+ 31a:	89 e0       	ldi	r24, 0x09	; 9
+ 31c:	f1 50       	subi	r31, 0x01	; 1
+ 31e:	20 40       	sbci	r18, 0x00	; 0
+ 320:	80 40       	sbci	r24, 0x00	; 0
+ 322:	e1 f7       	brne	.-8      	; 0x31c <main+0xce>
+ 324:	00 c0       	rjmp	.+0      	; 0x326 <main+0xd8>
+			_delay_ms(200);
+		}
+		if (key == 'A')
+ 326:	00 00       	nop
+ 328:	38 c0       	rjmp	.+112    	; 0x39a <main+0x14c>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 32a:	c1 34       	cpi	r28, 0x41	; 65
+ 32c:	d1 f4       	brne	.+52     	; 0x362 <main+0x114>
+ 32e:	f8 01       	movw	r30, r16
+ 330:	80 81       	ld	r24, Z
+ 332:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("A");
+ 334:	e4 de       	rcall	.-568    	; 0xfe <LCD_wBCommand>
+ 336:	82 e1       	ldi	r24, 0x12	; 18
+ 338:	91 e0       	ldi	r25, 0x01	; 1
+ 33a:	3b df       	rcall	.-394    	; 0x1b2 <LCD_wString>
+			i++;
+ 33c:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 340:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 344:	01 96       	adiw	r24, 0x01	; 1
+ 346:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 34a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 34e:	ff ef       	ldi	r31, 0xFF	; 255
+ 350:	23 ec       	ldi	r18, 0xC3	; 195
+ 352:	89 e0       	ldi	r24, 0x09	; 9
+ 354:	f1 50       	subi	r31, 0x01	; 1
+ 356:	20 40       	sbci	r18, 0x00	; 0
+ 358:	80 40       	sbci	r24, 0x00	; 0
+ 35a:	e1 f7       	brne	.-8      	; 0x354 <main+0x106>
+ 35c:	00 c0       	rjmp	.+0      	; 0x35e <main+0x110>
+			_delay_ms(200);
+		}
+		if (key == '4')
+ 35e:	00 00       	nop
+ 360:	38 c0       	rjmp	.+112    	; 0x3d2 <main+0x184>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 362:	c4 33       	cpi	r28, 0x34	; 52
+ 364:	d1 f4       	brne	.+52     	; 0x39a <main+0x14c>
+ 366:	f8 01       	movw	r30, r16
+ 368:	80 81       	ld	r24, Z
+ 36a:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("4");
+ 36c:	c8 de       	rcall	.-624    	; 0xfe <LCD_wBCommand>
+ 36e:	84 e1       	ldi	r24, 0x14	; 20
+ 370:	91 e0       	ldi	r25, 0x01	; 1
+ 372:	1f df       	rcall	.-450    	; 0x1b2 <LCD_wString>
+			i++;
+ 374:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 378:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 37c:	01 96       	adiw	r24, 0x01	; 1
+ 37e:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 382:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 386:	ff ef       	ldi	r31, 0xFF	; 255
+ 388:	23 ec       	ldi	r18, 0xC3	; 195
+ 38a:	89 e0       	ldi	r24, 0x09	; 9
+ 38c:	f1 50       	subi	r31, 0x01	; 1
+ 38e:	20 40       	sbci	r18, 0x00	; 0
+ 390:	80 40       	sbci	r24, 0x00	; 0
+ 392:	e1 f7       	brne	.-8      	; 0x38c <main+0x13e>
+ 394:	00 c0       	rjmp	.+0      	; 0x396 <main+0x148>
+			_delay_ms(200);
+		}
+		if (key == '5')
+ 396:	00 00       	nop
+ 398:	38 c0       	rjmp	.+112    	; 0x40a <__LOCK_REGION_LENGTH__+0xa>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 39a:	c5 33       	cpi	r28, 0x35	; 53
+ 39c:	d1 f4       	brne	.+52     	; 0x3d2 <main+0x184>
+ 39e:	f8 01       	movw	r30, r16
+ 3a0:	80 81       	ld	r24, Z
+ 3a2:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("5");
+ 3a4:	ac de       	rcall	.-680    	; 0xfe <LCD_wBCommand>
+ 3a6:	86 e1       	ldi	r24, 0x16	; 22
+ 3a8:	91 e0       	ldi	r25, 0x01	; 1
+ 3aa:	03 df       	rcall	.-506    	; 0x1b2 <LCD_wString>
+			i++;
+ 3ac:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 3b0:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 3b4:	01 96       	adiw	r24, 0x01	; 1
+ 3b6:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 3ba:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 3be:	ff ef       	ldi	r31, 0xFF	; 255
+ 3c0:	23 ec       	ldi	r18, 0xC3	; 195
+ 3c2:	89 e0       	ldi	r24, 0x09	; 9
+ 3c4:	f1 50       	subi	r31, 0x01	; 1
+ 3c6:	20 40       	sbci	r18, 0x00	; 0
+ 3c8:	80 40       	sbci	r24, 0x00	; 0
+ 3ca:	e1 f7       	brne	.-8      	; 0x3c4 <main+0x176>
+ 3cc:	00 c0       	rjmp	.+0      	; 0x3ce <main+0x180>
+			_delay_ms(200);
+		}
+		if (key == '6')
+ 3ce:	00 00       	nop
+ 3d0:	38 c0       	rjmp	.+112    	; 0x442 <__LOCK_REGION_LENGTH__+0x42>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 3d2:	c6 33       	cpi	r28, 0x36	; 54
+ 3d4:	d1 f4       	brne	.+52     	; 0x40a <__LOCK_REGION_LENGTH__+0xa>
+ 3d6:	f8 01       	movw	r30, r16
+ 3d8:	80 81       	ld	r24, Z
+ 3da:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("6");
+ 3dc:	90 de       	rcall	.-736    	; 0xfe <LCD_wBCommand>
+ 3de:	88 e1       	ldi	r24, 0x18	; 24
+ 3e0:	91 e0       	ldi	r25, 0x01	; 1
+ 3e2:	e7 de       	rcall	.-562    	; 0x1b2 <LCD_wString>
+			i++;
+ 3e4:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 3e8:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 3ec:	01 96       	adiw	r24, 0x01	; 1
+ 3ee:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 3f2:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 3f6:	ff ef       	ldi	r31, 0xFF	; 255
+ 3f8:	23 ec       	ldi	r18, 0xC3	; 195
+ 3fa:	89 e0       	ldi	r24, 0x09	; 9
+ 3fc:	f1 50       	subi	r31, 0x01	; 1
+ 3fe:	20 40       	sbci	r18, 0x00	; 0
+ 400:	80 40       	sbci	r24, 0x00	; 0
+ 402:	e1 f7       	brne	.-8      	; 0x3fc <main+0x1ae>
+ 404:	00 c0       	rjmp	.+0      	; 0x406 <__LOCK_REGION_LENGTH__+0x6>
+			_delay_ms(200);
+		}
+		if (key == 'B')
+ 406:	00 00       	nop
+ 408:	38 c0       	rjmp	.+112    	; 0x47a <__LOCK_REGION_LENGTH__+0x7a>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 40a:	c2 34       	cpi	r28, 0x42	; 66
+ 40c:	d1 f4       	brne	.+52     	; 0x442 <__LOCK_REGION_LENGTH__+0x42>
+ 40e:	f8 01       	movw	r30, r16
+ 410:	80 81       	ld	r24, Z
+ 412:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("B");
+ 414:	74 de       	rcall	.-792    	; 0xfe <LCD_wBCommand>
+ 416:	8a e1       	ldi	r24, 0x1A	; 26
+ 418:	91 e0       	ldi	r25, 0x01	; 1
+ 41a:	cb de       	rcall	.-618    	; 0x1b2 <LCD_wString>
+			i++;
+ 41c:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 420:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 424:	01 96       	adiw	r24, 0x01	; 1
+ 426:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 42a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 42e:	ff ef       	ldi	r31, 0xFF	; 255
+ 430:	23 ec       	ldi	r18, 0xC3	; 195
+ 432:	89 e0       	ldi	r24, 0x09	; 9
+ 434:	f1 50       	subi	r31, 0x01	; 1
+ 436:	20 40       	sbci	r18, 0x00	; 0
+ 438:	80 40       	sbci	r24, 0x00	; 0
+ 43a:	e1 f7       	brne	.-8      	; 0x434 <__LOCK_REGION_LENGTH__+0x34>
+ 43c:	00 c0       	rjmp	.+0      	; 0x43e <__LOCK_REGION_LENGTH__+0x3e>
+			_delay_ms(200);
+		}
+		if (key == '7')
+ 43e:	00 00       	nop
+ 440:	38 c0       	rjmp	.+112    	; 0x4b2 <__LOCK_REGION_LENGTH__+0xb2>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 442:	c7 33       	cpi	r28, 0x37	; 55
+ 444:	d1 f4       	brne	.+52     	; 0x47a <__LOCK_REGION_LENGTH__+0x7a>
+ 446:	f8 01       	movw	r30, r16
+ 448:	80 81       	ld	r24, Z
+ 44a:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("7");
+ 44c:	58 de       	rcall	.-848    	; 0xfe <LCD_wBCommand>
+ 44e:	8c e1       	ldi	r24, 0x1C	; 28
+ 450:	91 e0       	ldi	r25, 0x01	; 1
+ 452:	af de       	rcall	.-674    	; 0x1b2 <LCD_wString>
+			i++;
+ 454:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 458:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 45c:	01 96       	adiw	r24, 0x01	; 1
+ 45e:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 462:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 466:	ff ef       	ldi	r31, 0xFF	; 255
+ 468:	23 ec       	ldi	r18, 0xC3	; 195
+ 46a:	89 e0       	ldi	r24, 0x09	; 9
+ 46c:	f1 50       	subi	r31, 0x01	; 1
+ 46e:	20 40       	sbci	r18, 0x00	; 0
+ 470:	80 40       	sbci	r24, 0x00	; 0
+ 472:	e1 f7       	brne	.-8      	; 0x46c <__LOCK_REGION_LENGTH__+0x6c>
+ 474:	00 c0       	rjmp	.+0      	; 0x476 <__LOCK_REGION_LENGTH__+0x76>
+			_delay_ms(200);
+		}
+		if (key == '8')
+ 476:	00 00       	nop
+ 478:	38 c0       	rjmp	.+112    	; 0x4ea <__LOCK_REGION_LENGTH__+0xea>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 47a:	c8 33       	cpi	r28, 0x38	; 56
+ 47c:	d1 f4       	brne	.+52     	; 0x4b2 <__LOCK_REGION_LENGTH__+0xb2>
+ 47e:	f8 01       	movw	r30, r16
+ 480:	80 81       	ld	r24, Z
+ 482:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("8");
+ 484:	3c de       	rcall	.-904    	; 0xfe <LCD_wBCommand>
+ 486:	8e e1       	ldi	r24, 0x1E	; 30
+ 488:	91 e0       	ldi	r25, 0x01	; 1
+			i++;
+ 48a:	93 de       	rcall	.-730    	; 0x1b2 <LCD_wString>
+ 48c:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 490:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 494:	01 96       	adiw	r24, 0x01	; 1
+ 496:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 49a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 49e:	ff ef       	ldi	r31, 0xFF	; 255
+ 4a0:	23 ec       	ldi	r18, 0xC3	; 195
+ 4a2:	89 e0       	ldi	r24, 0x09	; 9
+ 4a4:	f1 50       	subi	r31, 0x01	; 1
+ 4a6:	20 40       	sbci	r18, 0x00	; 0
+ 4a8:	80 40       	sbci	r24, 0x00	; 0
+ 4aa:	e1 f7       	brne	.-8      	; 0x4a4 <__LOCK_REGION_LENGTH__+0xa4>
+ 4ac:	00 c0       	rjmp	.+0      	; 0x4ae <__LOCK_REGION_LENGTH__+0xae>
+			_delay_ms(200);
+		}
+		if (key == '9')
+ 4ae:	00 00       	nop
+ 4b0:	38 c0       	rjmp	.+112    	; 0x522 <__LOCK_REGION_LENGTH__+0x122>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 4b2:	c9 33       	cpi	r28, 0x39	; 57
+ 4b4:	d1 f4       	brne	.+52     	; 0x4ea <__LOCK_REGION_LENGTH__+0xea>
+ 4b6:	f8 01       	movw	r30, r16
+ 4b8:	80 81       	ld	r24, Z
+ 4ba:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("9");
+ 4bc:	20 de       	rcall	.-960    	; 0xfe <LCD_wBCommand>
+ 4be:	80 e2       	ldi	r24, 0x20	; 32
+ 4c0:	91 e0       	ldi	r25, 0x01	; 1
+			i++;
+ 4c2:	77 de       	rcall	.-786    	; 0x1b2 <LCD_wString>
+ 4c4:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 4c8:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 4cc:	01 96       	adiw	r24, 0x01	; 1
+ 4ce:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 4d2:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 4d6:	ff ef       	ldi	r31, 0xFF	; 255
+ 4d8:	23 ec       	ldi	r18, 0xC3	; 195
+ 4da:	89 e0       	ldi	r24, 0x09	; 9
+ 4dc:	f1 50       	subi	r31, 0x01	; 1
+ 4de:	20 40       	sbci	r18, 0x00	; 0
+ 4e0:	80 40       	sbci	r24, 0x00	; 0
+ 4e2:	e1 f7       	brne	.-8      	; 0x4dc <__LOCK_REGION_LENGTH__+0xdc>
+ 4e4:	00 c0       	rjmp	.+0      	; 0x4e6 <__LOCK_REGION_LENGTH__+0xe6>
+ 4e6:	00 00       	nop
+			_delay_ms(200);
+		}
+		if (key == 'C')
+ 4e8:	38 c0       	rjmp	.+112    	; 0x55a <__LOCK_REGION_LENGTH__+0x15a>
+ 4ea:	c3 34       	cpi	r28, 0x43	; 67
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 4ec:	d1 f4       	brne	.+52     	; 0x522 <__LOCK_REGION_LENGTH__+0x122>
+ 4ee:	f8 01       	movw	r30, r16
+ 4f0:	80 81       	ld	r24, Z
+ 4f2:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("C");
+ 4f4:	04 de       	rcall	.-1016   	; 0xfe <LCD_wBCommand>
+ 4f6:	82 e2       	ldi	r24, 0x22	; 34
+ 4f8:	91 e0       	ldi	r25, 0x01	; 1
+			i++;
+ 4fa:	5b de       	rcall	.-842    	; 0x1b2 <LCD_wString>
+ 4fc:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 500:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 504:	01 96       	adiw	r24, 0x01	; 1
+ 506:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 50a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 50e:	ff ef       	ldi	r31, 0xFF	; 255
+ 510:	23 ec       	ldi	r18, 0xC3	; 195
+ 512:	89 e0       	ldi	r24, 0x09	; 9
+ 514:	f1 50       	subi	r31, 0x01	; 1
+ 516:	20 40       	sbci	r18, 0x00	; 0
+ 518:	80 40       	sbci	r24, 0x00	; 0
+ 51a:	e1 f7       	brne	.-8      	; 0x514 <__LOCK_REGION_LENGTH__+0x114>
+ 51c:	00 c0       	rjmp	.+0      	; 0x51e <__LOCK_REGION_LENGTH__+0x11e>
+ 51e:	00 00       	nop
+			_delay_ms(200);
+		}
+		if (key == '*')
+ 520:	38 c0       	rjmp	.+112    	; 0x592 <__LOCK_REGION_LENGTH__+0x192>
+ 522:	ca 32       	cpi	r28, 0x2A	; 42
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 524:	d1 f4       	brne	.+52     	; 0x55a <__LOCK_REGION_LENGTH__+0x15a>
+ 526:	f8 01       	movw	r30, r16
+ 528:	80 81       	ld	r24, Z
+ 52a:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("*");
+ 52c:	e8 dd       	rcall	.-1072   	; 0xfe <LCD_wBCommand>
+ 52e:	84 e2       	ldi	r24, 0x24	; 36
+ 530:	91 e0       	ldi	r25, 0x01	; 1
+ 532:	3f de       	rcall	.-898    	; 0x1b2 <LCD_wString>
+			i++;
+ 534:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 538:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 53c:	01 96       	adiw	r24, 0x01	; 1
+ 53e:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 542:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 546:	ff ef       	ldi	r31, 0xFF	; 255
+ 548:	23 ec       	ldi	r18, 0xC3	; 195
+ 54a:	89 e0       	ldi	r24, 0x09	; 9
+ 54c:	f1 50       	subi	r31, 0x01	; 1
+ 54e:	20 40       	sbci	r18, 0x00	; 0
+ 550:	80 40       	sbci	r24, 0x00	; 0
+ 552:	e1 f7       	brne	.-8      	; 0x54c <__LOCK_REGION_LENGTH__+0x14c>
+ 554:	00 c0       	rjmp	.+0      	; 0x556 <__LOCK_REGION_LENGTH__+0x156>
+ 556:	00 00       	nop
+ 558:	38 c0       	rjmp	.+112    	; 0x5ca <__LOCK_REGION_LENGTH__+0x1ca>
+			_delay_ms(200);
+		}
+		if (key == '0')
+ 55a:	c0 33       	cpi	r28, 0x30	; 48
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 55c:	d1 f4       	brne	.+52     	; 0x592 <__LOCK_REGION_LENGTH__+0x192>
+ 55e:	f8 01       	movw	r30, r16
+ 560:	80 81       	ld	r24, Z
+ 562:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("0");
+ 564:	cc dd       	rcall	.-1128   	; 0xfe <LCD_wBCommand>
+ 566:	86 e2       	ldi	r24, 0x26	; 38
+ 568:	91 e0       	ldi	r25, 0x01	; 1
+ 56a:	23 de       	rcall	.-954    	; 0x1b2 <LCD_wString>
+			i++;
+ 56c:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 570:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 574:	01 96       	adiw	r24, 0x01	; 1
+ 576:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 57a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 57e:	ff ef       	ldi	r31, 0xFF	; 255
+ 580:	23 ec       	ldi	r18, 0xC3	; 195
+ 582:	89 e0       	ldi	r24, 0x09	; 9
+ 584:	f1 50       	subi	r31, 0x01	; 1
+ 586:	20 40       	sbci	r18, 0x00	; 0
+ 588:	80 40       	sbci	r24, 0x00	; 0
+ 58a:	e1 f7       	brne	.-8      	; 0x584 <__LOCK_REGION_LENGTH__+0x184>
+ 58c:	00 c0       	rjmp	.+0      	; 0x58e <__LOCK_REGION_LENGTH__+0x18e>
+ 58e:	00 00       	nop
+			_delay_ms(200);
+		}
+		if (key == '#')
+ 590:	37 c0       	rjmp	.+110    	; 0x600 <__LOCK_REGION_LENGTH__+0x200>
+ 592:	c3 32       	cpi	r28, 0x23	; 35
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 594:	d1 f4       	brne	.+52     	; 0x5ca <__LOCK_REGION_LENGTH__+0x1ca>
+ 596:	f8 01       	movw	r30, r16
+ 598:	80 81       	ld	r24, Z
+ 59a:	80 68       	ori	r24, 0x80	; 128
+			LCD_wString("#");
+ 59c:	b0 dd       	rcall	.-1184   	; 0xfe <LCD_wBCommand>
+ 59e:	88 e2       	ldi	r24, 0x28	; 40
+ 5a0:	91 e0       	ldi	r25, 0x01	; 1
+ 5a2:	07 de       	rcall	.-1010   	; 0x1b2 <LCD_wString>
+			i++;
+ 5a4:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 5a8:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 5ac:	01 96       	adiw	r24, 0x01	; 1
+ 5ae:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 5b2:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 5b6:	ff ef       	ldi	r31, 0xFF	; 255
+ 5b8:	23 ec       	ldi	r18, 0xC3	; 195
+ 5ba:	89 e0       	ldi	r24, 0x09	; 9
+ 5bc:	f1 50       	subi	r31, 0x01	; 1
+ 5be:	20 40       	sbci	r18, 0x00	; 0
+ 5c0:	80 40       	sbci	r24, 0x00	; 0
+ 5c2:	e1 f7       	brne	.-8      	; 0x5bc <__LOCK_REGION_LENGTH__+0x1bc>
+ 5c4:	00 c0       	rjmp	.+0      	; 0x5c6 <__LOCK_REGION_LENGTH__+0x1c6>
+ 5c6:	00 00       	nop
+			_delay_ms(200);
+		}
+		if (key == 'D')
+ 5c8:	1b c0       	rjmp	.+54     	; 0x600 <__LOCK_REGION_LENGTH__+0x200>
+		{
+			LCD_wBCommand(0x80 | i);  // DDRAM Address = 0x40 설정
+ 5ca:	c4 34       	cpi	r28, 0x44	; 68
+ 5cc:	c9 f4       	brne	.+50     	; 0x600 <__LOCK_REGION_LENGTH__+0x200>
+ 5ce:	f8 01       	movw	r30, r16
+ 5d0:	80 81       	ld	r24, Z
+			LCD_wString("D");
+ 5d2:	80 68       	ori	r24, 0x80	; 128
+ 5d4:	94 dd       	rcall	.-1240   	; 0xfe <LCD_wBCommand>
+ 5d6:	81 e3       	ldi	r24, 0x31	; 49
+ 5d8:	91 e0       	ldi	r25, 0x01	; 1
+			i++;
+ 5da:	eb dd       	rcall	.-1066   	; 0x1b2 <LCD_wString>
+ 5dc:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 5e0:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 5e4:	01 96       	adiw	r24, 0x01	; 1
+ 5e6:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 5ea:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 5ee:	ff ef       	ldi	r31, 0xFF	; 255
+ 5f0:	23 ec       	ldi	r18, 0xC3	; 195
+ 5f2:	89 e0       	ldi	r24, 0x09	; 9
+ 5f4:	f1 50       	subi	r31, 0x01	; 1
+ 5f6:	20 40       	sbci	r18, 0x00	; 0
+ 5f8:	80 40       	sbci	r24, 0x00	; 0
+ 5fa:	e1 f7       	brne	.-8      	; 0x5f4 <__LOCK_REGION_LENGTH__+0x1f4>
+ 5fc:	00 c0       	rjmp	.+0      	; 0x5fe <__LOCK_REGION_LENGTH__+0x1fe>
+			_delay_ms(200);
+		}
+		if(i==81)
+ 5fe:	00 00       	nop
+ 600:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 604:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 608:	81 35       	cpi	r24, 0x51	; 81
+ 60a:	91 05       	cpc	r25, r1
+ 60c:	09 f0       	breq	.+2      	; 0x610 <__LOCK_REGION_LENGTH__+0x210>
+		{
+			LCD_Init();
+ 60e:	37 ce       	rjmp	.-914    	; 0x27e <main+0x30>
+ 610:	8f dd       	rcall	.-1250   	; 0x130 <LCD_Init>
+			LCD_wBCommand(0x80 | 0x00);  // DDRAM Address = 0 설정
+ 612:	80 e8       	ldi	r24, 0x80	; 128
+ 614:	74 dd       	rcall	.-1304   	; 0xfe <LCD_wBCommand>
+ 616:	8a e2       	ldi	r24, 0x2A	; 42
+			LCD_wString("TEXT LCD");
+ 618:	91 e0       	ldi	r25, 0x01	; 1
+ 61a:	cb dd       	rcall	.-1130   	; 0x1b2 <LCD_wString>
+ 61c:	f0 92 01 01 	sts	0x0101, r15	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+			i = 64;
+ 620:	e0 92 00 01 	sts	0x0100, r14	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 624:	2c ce       	rjmp	.-936    	; 0x27e <main+0x30>
+
+00000626 <_exit>:
+ 626:	f8 94       	cli
+
+00000628 <__stop_program>:
+ 628:	ff cf       	rjmp	.-2      	; 0x628 <__stop_program>
